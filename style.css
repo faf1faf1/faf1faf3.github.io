@@ -1,0 +1,612 @@
+/* لا داعي لاضافة ; لاخر خاصية */
+/* 
+    من الاخطاء الشائعة استخدام
+    0px
+    الصفر هو صفر لا يحتاج لاي اضافة اخرى
+*/
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #d1ccc0;
+    height: 3000px
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #202020;
+    position: fixed
+}
+
+header > a {
+    float: left;
+    text-decoration: none;
+    /* 
+        margin: 15px; == margin: 15px 15px 15px 15px;
+        margin: 15px 15px; == margin: 15px 15px 15px 15px;
+        لذالك لا داعي لكتابة القيمة الثانية
+    */
+    margin: 15px;
+    color: #1abc9c
+}
+
+header > a:hover {
+    color: #e4e4e4
+}
+
+header > ul {
+    float: right;
+    /* 
+        margin: 15px; == margin: 15px 15px 15px 15px;
+        margin: 15px 15px; == margin: 15px 15px 15px 15px;
+        لذالك لا داعي لكتابة القيمة الثانية
+    */
+    margin: 15px
+}
+
+/* 
+    تم تغير
+    #h-ul
+    الى 
+    .h-ul
+*/
+.h-ul li {
+    display: inline-block;
+    margin-right: 30px
+}
+
+/* 
+    تم تغير
+    #h-ul
+    الى 
+    .h-ul
+*/
+.h-ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #1abc9c;
+    /*if you dont want this || padding you could put it insde this comment >>//*/
+    padding: 15px 21px 21px
+}
+
+/* 
+    تم تغير
+    #h-ul
+    الى 
+    .h-ul
+*/
+.h-ul li a:hover {
+    background-color: #333;
+}
+
+.h-ul li a:focus {
+    background-color: #333;
+    color: #e4e4e4
+}
+
+
+.b-img {
+    width: 100%;
+    height: 515px;
+    /* 
+      لا داعي لاستخدام الخاصية المختصرة
+      background
+      لان كل ما تريد فعله هو وضع صورة كخلفية فقط
+     */
+    background-image: url('set-up-img.jpg');
+    /* لا داعي لاستخدام هذي الخاصية */
+    /*overflow: auto;*/
+    position: relative
+}
+
+.back {
+    /* تحرك بالوضع المطلق */
+    position: absolute;
+    /* احداثياتك من الاعلى هي صفر */
+    top: 0;
+    /* احداثياتك من اليسار هي صفر */
+    left: 0;
+    /* عرضك هو مية بالمية من مساحة الاب */
+    width: 100%;
+    /* طول هو مية بالمية من طول الاب */
+    height: 100%;
+    /* لون الخلفية هو اسود وشفافيتة هي صفر فاصلة سبعه من اصل واحد */
+    background-color: rgba(0,0,0,.8)
+}
+
+.b-img h1 {
+    text-align: center;
+    margin-top: 15%;
+    color: #ecf0f1;
+    font-size: 35px;
+    font-family: cursive
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 60px
+}
+
+.btn-2,
+.btn-1 {
+    width: 110px;
+    height: 50px;
+    background-color: #1abc9c;
+    border-radius: 5px
+}
+
+/*
+.btn-2 {
+    width: 110px;
+    height: 50px;
+    background-color: #1abc9c;
+    border-radius: 5px
+}
+*/
+
+
+/* 
+    تم عمل قروب الى
+    .btn-1:hover
+    و
+    .btn-2:hover
+    لانهم مشتركين بنفس الخواص
+    لعمل قروب كل ما عليك هو فصل عنصر عن عنصر ب , وبامكانك عمل قروب لاي عدد مالا نهاية من العناصر المشتركة بنفس الخواص
+*/
+.btn-1:hover,
+.btn-2:hover {
+    background-color: #e4e4e4
+}
+
+.btn-a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: none;
+    color: #202020;
+    padding: 12px 15px
+}
+
+.divison {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: #dff9fb
+}
+
+.divison article {
+    display: inline-block;
+    width: 290px;
+    height: 270px;
+    text-align: center;
+    /*
+        margin: 50px 40px 40px == margin: 50px 40px 40px 40px;
+        لذلك لا داعي لكتابة القيمة الرابعة
+    */
+    margin: 50px 40px 40px;
+    border-radius: 10px
+}
+
+.divison article:hover {
+    box-shadow: #888 0 5px 5px
+}
+
+.divison article h3 {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #1abc9c;
+    border-radius: 10px
+}
+
+.divison article span {
+    font-size: 22px;
+    color: #2f3542;
+}
+
+
+.breakdown {
+    text-align: center;
+    background-color: #1abc9c;
+    color: #1abc9c;
+    font-size: 3px
+}
+
+
+.icons-div {
+    width: 100%;
+    height: 700px;
+    background-color: #dff9fb;
+    text-align: center
+}
+
+/* 
+    تم تحويل المحدد من
+    .icons-div h1
+    الى
+    .icons-div h2
+    لانة تم تعديلة في اتش تي ام ال
+ */
+.icons-div h2 {
+    font-size: 30px;
+    /* 
+    من الاخطاء الشائعة استخدام
+    0px
+    الصفر هو صفر لا يحتاج لاي اضافة اخرى
+    */
+    /* 
+        padding: 40px 0 80px; == padding: 40px 0 80px 0;
+        لذلك لا داعي لكتابة القيمة الرابعة
+    */
+    padding: 40px 0 80px;
+    font-family: sans-serif
+}
+
+.icons-div article {
+    width: 200px;
+    height: 400px;
+    display: inline-block;
+    text-align: center;
+    /* 
+    من الاخطاء الشائعة استخدام
+    0px
+    الصفر هو صفر لا يحتاج لاي اضافة اخرى
+    */
+    /*
+        margin: 40px 20px 0 == margin: 40px 20px 0 20px
+        لذلك لا داعي لكتابة القيمة الرابعة
+    */
+    margin: 40px 20px 0
+}
+
+
+.icons-div article:hover {
+    box-shadow:#888 0 2px 10px;
+    border-radius: 10px;
+}
+
+
+
+.icons-div article h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    /* 
+    من الاخطاء الشائعة استخدام
+    0px
+    الصفر هو صفر لا يحتاج لاي اضافة اخرى
+    */
+    border-radius: 10px
+}
+
+.icons-div article p {
+    font-size: 16px;
+    margin-top: 20px
+}
+
+.icons-div article button {
+    width: 130px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+    display: block;
+    border-radius: 80px;
+    background-color: #1abc9c
+}
+
+
+
+
+/*============================================ team section css start ================================================*/
+		.team {
+			width: 100%;
+			height: 650px;
+			background-image: url('buildings2.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.team .team-shadow {
+			width: 100%;
+			height: 650px;
+			background-color: rgba(2,2,2,0.6);
+			text-align: center;
+			color: #fff;
+			font-family: cursive;
+		}
+
+
+		.team .team-shadow .team-top h2 {
+			padding: 50px 0 20px;
+		}
+
+		.team .team-shadow .transform {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			margin-top: 200px;
+			transform: perspective(80px);
+			transform-style: preserve-3d;
+		}
+
+		.team .team-shadow .team-one {
+			width: 22%;
+			height: 400px;
+			border-radius: 20px;
+			background-color: #1abc9c;
+			margin-top: 50px;
+			padding: 5px;
+			position: absolute;
+		}
+
+		/*====================== animation starts from here =====================================================================*/
+		.team .team-shadow .transform div:nth-child(1)
+		{
+			animation: cardOne 20s ease-in-out infinite;
+		}
+
+		@keyframes cardOne
+		{
+			0%,100% {
+				transform: translate3d(0, 0, 0);
+			}
+			20% {
+				transform: translate3d(800px, 0, -40px);
+			}
+			40% {
+				transform: translate3d(450px, 0, -55px);
+			}
+			60% {
+				transform: translate3d(-450px, 0, -55px);
+			}
+			80% {
+				transform: translate3d(-800px, 0, -40px);
+			}
+		}
+
+		.team .team-shadow .transform div:nth-child(2)
+		{
+			animation: cardtwo 20s ease-in-out infinite;
+		}
+
+		@keyframes cardtwo
+		{
+			0%,100% {
+				transform: translate3d(-800px, 0, -40px);
+			}
+			20% {
+				transform: translate3d(0, 0, 0);
+			}
+			40% {
+				transform: translate3d(800px, 0, -40px);
+			}
+			60% {
+				transform: translate3d(450px, 0, -55px);
+			}
+			80% {
+				transform: translate3d(-450px, 0, -55px);
+			}
+		}
+
+		.team .team-shadow .transform div:nth-child(3)
+		{
+			animation: cardthree 20s ease-in-out infinite;
+		}
+
+		@keyframes cardthree
+		{
+			0%,100% {
+				transform: translate3d(-450px, 0, -55px);
+			}
+			20% {
+				transform: translate3d(800px, 0, -40px);
+			}
+			40% {
+				transform: translate3d(0, 0, 0);
+			}
+			60% {
+				transform: translate3d(800px, 0, -40px);
+			}
+			80% {
+				transform: translate3d(450px, 0, -55px);
+			}
+		}
+
+		.team .team-shadow .transform div:nth-child(4)
+		{
+			animation: cardfour 20s ease-in-out infinite;
+		}
+
+		@keyframes cardfour
+		{
+			0%,100% {
+				transform: translate3d(450px, 0, -55px);
+			}
+			20% {
+				transform: translate3d(-450px, 0, -55px);
+			}
+			40% {
+				transform: translate3d(-800px, 0, -40px);
+			}
+			60% {
+				transform: translate3d(0, 0, 0);
+			}
+			80% {
+				transform: translate3d(800px, 0, -40px);
+			}
+		}
+
+		.team .team-shadow .transform div:nth-child(5)
+		{
+			animation: cardfive 20s ease-in-out infinite;
+		}
+
+		@keyframes cardfive
+		{
+			0%,100% {
+				transform: translate3d(800, 0, -40px);
+			}
+			20% {
+				transform: translate3d(450px, 0, -55px);
+			}
+			40% {
+				transform: translate3d(-450px, 0, -55px);
+			}
+			60% {
+				transform: translate3d(-800px, 0, -40px);
+			}
+			80% {
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		/*====================== animation ends here =====================================================================*/
+
+
+
+		.team .team-shadow .team-one img {
+			width: 180px;
+		}
+
+		.team .team-shadow .team-one h2,
+		.team .team-shadow .team-one p {
+			color: #000;
+			padding-top: 20px;
+			font-family: cursive;
+		}
+
+		.team .team-shadow .team-one p {
+			color: #e4e4e4;
+		}
+
+
+		/*============================================ team section css end ================================================*/
+
+
+    
+
+
+.social-media {
+    width: 100%;
+    height: 350px;
+    background-color: #dff9fb;
+}
+
+.social-media .s-div {
+    height: 300px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.social-media .s-div a {
+   margin: 0 5px;
+}
+
+.social-media .s-div img:hover {
+    opacity: 0.8;
+}
+
+
+.social-media .s-div img:hover {
+    background-color: blueviolet;
+    border-radius: 55px;
+}
+
+
+#y:hover {
+    background-color: red
+}
+
+#t:hover {
+    background-color: cyan
+}
+
+#f:hover {
+    background-color: mediumblue
+}
+
+#i:hover {
+    background-color: darkorange
+}
+
+
+
+
+
+
+
+
+
+
+.contact {
+			width: 100%;
+			height: 550px;
+			background-color: #dff9fb;
+		}
+
+		.contact .contact-div {
+			padding: 40px 50px;
+			width: 300px;
+			height: 400px;
+			background-color: #dff9fb;
+			font-size: 40px;
+			display: inline-block;
+			margin-left: 50px;
+		}
+
+		.contact .contact-div h3{
+			font-family: cursive;
+		}
+
+		.contact .contact-input {
+			width: 400px;
+			height: 520px;
+			background-color: #dff9fb;
+			float: right;
+			margin-right: 50px;
+			padding-top: 30px;
+		}
+
+		.contact .contact-input input {
+			height: 40px;
+		}
+
+		.contact .contact-input textarea {
+			width: 380px;
+			height: 200px;
+		}
+
+		.contact-btn {
+			width: 380px;
+			height: 40px;
+			display: block;
+			border-radius: 5px;
+			margin-top: 10px;
+			background-color: #F5D949;
+		}
+
+		.contact-input p {
+			font-size: 30px;
+			font-family: cursive;
+		}
+
+
+
+
+footer {
+    width: 100%;
+    height: 40px;
+    background: #202020;
+    text-align: center
+}
+footer p {
+    color: aliceblue;
+    padding: 10px;
+}
+
+
+
+
+

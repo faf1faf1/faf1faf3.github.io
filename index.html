@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- لغة الصفحة هي اللغة الانجليزية -->
+<html lang="en">
+
+<head>
+    <!-- ترميز الاحرف للصفحة عند وجوده بامكانك كتابة جميع الاحرف والرموز على مستوى العالم -->
+    <meta charset="utf-8"/>
+    <!-- عن اضافة هذا الكود سوف يعالج الابعاد والطول للموقع في الهواتف الذكية والتابلت -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- 
+        من الاخطاء الشائعة استخدام بهذي الطريقة
+        &
+        لان هذا الرمز مستخدم في اتش تي ام ال لترميز الاحرف ولادراجة في الصفحة يجب كتابة رمزه التالي
+        &AMP;
+     -->
+    <title>HTML5&AMP;CSS3-test</title>
+    <!--
+        في اتش تي ام ال الاصدار الخامس نوع اللينك هو بشكل افتراضي
+        text/css
+        لذالك لا داعي لاضافة
+    -->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- ايقونة للصفحة -->
+    <link rel="icon" href="set-up-img.jpg"/>
+</head>
+
+<body>
+    
+    <!-- يجب وضع كومنت هنا يوضح اسم القسم على سبيل المثال -->
+    <!-- Start Header -->
+
+    <header>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Magneto_(comics)">
+            <h2>MAGNETO-OFFICIAL.COM</h2>
+        </a>
+        <!-- من الاخطاء الشائعة استخدام الأي دي لتنسيق العناصر لذالك تم تحويله الى كلاس -->
+        <ul class="h-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">courses</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <!-- في نهاية القسم وضع كومنت يوضح ان هذي هي النهايه على سبيل المثال -->
+    <!-- End Header -->
+    <!-- وهكذا لبقية الاقسام فالكومنت يساعدتك على معرفه بداية القسم ونهايته وايضا يشرح لك معلومات عن القسم والملاحظات -->
+    
+    
+    <!--this div is made to be replace of the 0-space when i make the header position fixed-->
+    <div style="width: 100%; height: 60px"></div>
+    
+    
+    <div class="b-img">
+        <!-- هذا الديف هو عبارة عن خلفية شفافة لجميع العناصر بداخل الكلاس بي امج -->
+        <div class="back">
+            <h1>Do You Want To Learn CODING ?</h1>
+            <div class="buttons">
+                <!-- يجب ذكر نوع الزرار ليعمل بصورة صحيحة -->
+                <!-- 
+                    من الاخطاء الشائعة وضع عنصر
+                    a
+                    بداخل
+                    button
+                    يجب اختيار واحد منهم كزرار
+                    مثال
+                    <a class="btn-a" href="#">Join us</a>
+                    او
+                    <button type="button" class="btn-1" onclick="test()">Join us</button>
+                    في حالتك هذي يفضل استخدام
+                    <a class="btn-a" href="#">Join us</a>
+                 -->
+                <a class="btn-1 btn-a" href="#">Join us</a>
+                <a class="btn-2 btn-a" href="#">Call us</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- start of divison -->
+    <div class="divison">
+        <article class="page-d1">
+            <h3>Our Services</h3>
+            <span> We offer reliable credit services to public people and our partners in the region
+                We offer reliable credit services to public people and our partners in the region test.</span>
+        </article>
+        <article class="page-d1">
+            <h3>Our company</h3>
+            <span>Our great company welcomes you in all areas testtest that may come to mind. We are a test magic
+                company test that has done magic for test test Alaeddin test.</span>
+        </article>
+        <article class="page-d1">
+            <h3>Subscribe to services</h3>
+            <span>We know each other. test test We are the ones test who helped Marvel test to overcome test Thanos, to
+                whom Iron Man sacrificed Iron Man sacrificed test. </span>
+        </article>
+    </div>
+    <!-- end of divison -->
+    
+    
+    <!-- هذا القسم مجرد فاصلة بين قسمين -->
+    <div class="breakdown">
+        =============================================================================================================================
+    </div>
+    
+    <!-- start of div icon -->
+    <div class="icons-div">
+        <!-- 
+            تم تحويل العنصر من 
+            h1
+            الى
+            h2
+            لانة لا يحق لك استخدام اكثر من
+            h1
+            في الصفحة الواحدة
+         -->
+        <h2>WE HELP YOUR BUSINES !!</h2>
+        <article>
+            <!-- لتسريع سرع الموقع دائما ما ينصح بـ تحديد طول وعرض الصوره في اتش تي ام ال -->
+            <!-- 
+                في حالة تم حذف الصورة لاي سبب من الاسباب النص في
+                 alt
+                 هو سيظهر ليوضع محتوى الصور وكذالك محركات بحث قوقل تقرا هذا النص لو بحث شخص بالنص المكتوب في
+                 alt
+                 في قوقل سيظهر موقعك من ضمن النتائج
+             -->
+            <img src="responsive.png" height="128" width="128" alt="responsive"/>
+            <h3>UI/UX Disign</h3>
+            <p>
+                Believe the product you want in time, our team uses clear and accurate steps to successfully accomplish
+                the task.
+            </p>
+            <!-- يجب ذكر نوع الزرار ليعمل بصورة صحيحة -->
+            <button type="button">For More..</button>
+        </article>
+
+        <article>
+            <!-- لتسريع سرع الموقع دائما ما ينصح بـ تحديد طول وعرض الصوره في اتش تي ام ال -->
+            <!-- 
+                في حالة تم حذف الصورة لاي سبب من الاسباب النص في
+                 alt
+                 هو سيظهر ليوضع محتوى الصور وكذالك محركات بحث قوقل تقرا هذا النص لو بحث شخص بالنص المكتوب في
+                 alt
+                 في قوقل سيظهر موقعك من ضمن النتائج
+             -->
+            <img src="money.png" height="128" width="128" alt="money"/>
+            <h3>Business </h3>
+            <p>
+                Want to know what your business needs? Let us give you periodic consultation and give you the best ways
+                to succeed your project through
+            </p>
+            <!-- يجب ذكر نوع الزرار ليعمل بصورة صحيحة -->
+            <button type="button">For More..</button>
+        </article>
+
+        <article>
+            <!-- لتسريع سرع الموقع دائما ما ينصح بـ تحديد طول وعرض الصوره في اتش تي ام ال -->
+            <!-- 
+                في حالة تم حذف الصورة لاي سبب من الاسباب النص في
+                 alt
+                 هو سيظهر ليوضع محتوى الصور وكذالك محركات بحث قوقل تقرا هذا النص لو بحث شخص بالنص المكتوب في
+                 alt
+                 في قوقل سيظهر موقعك من ضمن النتائج
+             -->
+            <img src="cart.png" height="128" width="128" alt="cart"/>
+            <h3>E-Marketing</h3>
+            <p>
+                You want to stand out in the online market. We are here to do this specifically for your business.
+                You want to stand You want to stand.
+            </p>
+            <!-- يجب ذكر نوع الزرار ليعمل بصورة صحيحة -->
+            <button type="button">For More..</button>
+        </article>
+
+        <article>
+            <!-- لتسريع سرع الموقع دائما ما ينصح بـ تحديد طول وعرض الصوره في اتش تي ام ال -->
+            <!-- 
+                في حالة تم حذف الصورة لاي سبب من الاسباب النص في
+                 alt
+                 هو سيظهر ليوضع محتوى الصور وكذالك محركات بحث قوقل تقرا هذا النص لو بحث شخص بالنص المكتوب في
+                 alt
+                 في قوقل سيظهر موقعك من ضمن النتائج
+             -->
+            <img src="app.png" height="128" width="128" alt="app"/>
+            <h3>applications</h3>
+            <p>
+                Get your great app for your business on the app market, in record time.
+                app market, in record time. record time. record time.
+            </p>
+            <!-- يجب ذكر نوع الزرار ليعمل بصورة صحيحة -->
+            <button type="button">For More..</button>
+        </article>
+
+        <article>
+            <!-- لتسريع سرع الموقع دائما ما ينصح بـ تحديد طول وعرض الصوره في اتش تي ام ال -->
+            <!-- 
+                في حالة تم حذف الصورة لاي سبب من الاسباب النص في
+                 alt
+                 هو سيظهر ليوضع محتوى الصور وكذالك محركات بحث قوقل تقرا هذا النص لو بحث شخص بالنص المكتوب في
+                 alt
+                 في قوقل سيظهر موقعك من ضمن النتائج
+             -->
+            <img src="chart.png" height="128" width="128" alt="chart"/>
+            <h3>Software solutions</h3>
+            <p>
+                Believe the product you want in time, our team uses clear and accurate steps to successfully accomplish
+                the task.
+            </p>
+            <!-- يجب ذكر نوع الزرار ليعمل بصورة صحيحة -->
+            <button type="button">For More..</button>
+        </article>
+    </div>
+    
+    
+    
+    <!-- =========================================== Team Section start ====================================================================-->
+<section class="team">
+	<div class="team-shadow">
+		<div class="container">
+			<div class="team-top">
+				<h2>OUR TEAM</h2>
+				 <p style="color: #b3b3b3">We Are Happy To deal With You in the field of homes and these are our team will<br>help you in looking for you and communcate with you</p>
+			</div>
+
+			<div class="transform">
+				<div class="team-one">
+					<img src="man.png">
+					<h2>Ahmed ali</h2>
+					<p>We Are Happy To deal With You in the field of homes and these are our team will<br>help you in looking for you and communcate with you</p>
+				</div>
+
+				<div class="team-one">
+					<img src="boy1.png">
+					<h2>Mohammed</h2>
+					<p>We Are Happy To deal With You in the field of homes and these are our team will<br>help you in looking for you and communcate with you</p>
+				</div>
+
+				<div class="team-one">
+					<img src="boy.png">
+					<h2>Fawaz</h2>
+					<p>We Are Happy To deal With You in the field of homes and these are our team will<br>help you in looking for you and communcate with you</p>
+				</div>
+
+				<div class="team-one">
+					<img src="boy2.png">
+					<h2>Peter Parker</h2>
+					<p>We Are Happy To deal With You in the field of homes and these are our team will<br>help you in looking for you and communcate with you</p>
+				</div>
+
+				<div class="team-one">
+					<img src="boy3.png">
+					<h2>Tony Stark</h2>
+					<p>We Are Happy To deal With You in the field of homes and these are our team will<br>help you in looking for you and communcate with you</p>
+				</div>
+				<!-- end of transform-->
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- =========================================== Team Section End ====================================================================-->
+
+    
+    <section class="social-media">
+        <div class="s-div">
+            
+            <a href="#"><img id="y" src="youtube.png"></a>
+            
+            <a href="#"><img id="t" src="twitter.png"></a>
+            
+            <a href="#"><img id="f" src="facebook.png"></a>
+            
+            <a href="#"><img id="i" src="instagram.png"></a>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <section class="contact">
+	<div class="contact-div">
+		<h3>Locatin:</h3>
+		<p>--USA, Calfornia</p>
+
+		<h3>Phone:</h3>
+		<p>--2940322-193</p>
+
+		<h3>Email:</h3>
+		<p>--pro@gmail.com</p>
+
+		<h3>Ip Adress:</h3>
+		<p>fb.me/drnourhomsi</p>
+	</div>
+
+	<div class="contact-input">
+		<p>UserName</p>
+		<input type="text" name="UserName" placeholder="UserName" size="50">
+		<p>Email</p>
+		<input type="text" name="Email" placeholder="Email" size="50">
+		<p>Comments</p>
+		<textarea class="textarea" cols="40" name="textarea" placeholder="Write Comments"></textarea>
+		<button class="contact-btn" type="button">Submit</button>
+	</div>
+</section>
+    
+    
+    
+    <footer>
+        <p>CopyRight-Allrights:Reserved</p>    
+    </footer>
+    
+</body>
+
+</html>
